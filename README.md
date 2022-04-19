@@ -16,4 +16,8 @@ Durante o Projeto Cloud Implementação IAM, ao executar os playbooks para cria�
    - pip3 install sendgrid
    - pip3 install update sendgrid
 
+5. Exportar variáveis a serem utilizadas no playbook
+
+6. Criação dos playbooks
+
 
