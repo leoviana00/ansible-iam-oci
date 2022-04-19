@@ -12,7 +12,8 @@ Durante o Projeto Cloud Implementação IAM, ao executar os playbooks para cria�
 
 3. pip install sendgrid==1.6.22
 
-4. pip3 install sendgrid
-   pip3 install update sendgrid
+4. pip3
+   - pip3 install sendgrid
+   - pip3 install update sendgrid
 
 
