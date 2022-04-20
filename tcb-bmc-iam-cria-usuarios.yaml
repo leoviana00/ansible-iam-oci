@@ -30,6 +30,9 @@
 - set_fact:
     user_password: "{{ result.ui_password['password'] }}"
   when: criacaousuario.changed   
+- debug:
+    msg: "Senha de {{ item }} é {{ user_password }}"
+  when: criacaousuario.changed
 
 - name: Send created credentials by email
   community.general.sendgrid:  
@@ -38,7 +41,9 @@
     to_addresses:
       - "{{ item }}{{ dominio }}"
       - leonardoviana00@gmail.com 
-    subject: "Credencias criadas." 
-    body: "Senha de {{ item }} é {{ user_password }}"
+    subject: "OCI - Credencias criadas com sucesso!." 
+    body: 'Olá "{{ item }}."
+      Seja bem-vindo Oracle Cloud.
+      Por favor, faça login utilizando suas credenciais. Login:"{{ item }}" & Senha:"{{ user_password }}"'
   delegate_to: localhost 
   when: criacaousuario.changed
