@@ -40,6 +40,7 @@ export PARENT_COMPARTMENT_OCID=<inserir-ocid>
 export COMPUTE_COMPARTMENT_OCID=<inserir-ocid>
 export REDES_COMPARTMENT_OCID=<inserir-ocid>
 export DB_COMPARTMENT_OCID=<inserir-ocid>
+export SENDGRID_API_KEY=<inserir-apikey-sendgrid>
 ```
 
 ## Playbooks
